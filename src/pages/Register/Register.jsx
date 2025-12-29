@@ -7,6 +7,7 @@ import { FaRegEyeSlash } from "react-icons/fa";
 import { api } from '../../utils/api';
 import { useNavigate } from 'react-router-dom';
 import { setUser } from '../../Store/Slices/userSlice';
+import './register.css'
 export default function Register() {
     const [isPassword,setisPassword] = useState(true);
     const [isloading,setLoading]= useState(false);
@@ -72,7 +73,7 @@ localStorage.setItem('userInfo',JSON.stringify(response.data));
     <div className='mt-4'>
         <h3>Register</h3>
         <Form data-bs-theme={isDark ? 'dark' : 'light'} noValidate validated={validated} className='text-primary fw-bolder ms-3' onSubmit={handleRegister}>
-            <div className='d-flex justify-content-between mt-4'>
+            <div className='d-flex justify-content-between mt-4 register-res'>
                   <Form.Group className="mb-2">
                 <Form.Label htmlFor='firstname'>FirstName:</Form.Label>
                 <Form.Control type='text'id='firstname' name='firstname'placeholder='Enter firstName' required ref={firstnameRef}></Form.Control>
@@ -136,7 +137,7 @@ localStorage.setItem('userInfo',JSON.stringify(response.data));
 
                 
             </Form.Group>
-            <div className='d-flex justify-content-between mt-4'>
+            <div className='d-flex justify-content-between mt-4 register-res'>
                   <Form.Group className="mb-2">
                     <Form.Label >Gender:</Form.Label>
                     <div className=' gap-2 d-flex'>
