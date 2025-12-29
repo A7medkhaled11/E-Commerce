@@ -8,3 +8,8 @@ a.active{
     color: black !important;
 }
 }
+@media(max-width:450px){
+.general-dash{
+    width: 120px;
+}
+}
