@@ -48,7 +48,10 @@ else{
             country:countryRef.current.value
         }
         const response = await api.post('/users/add',data)
-dispatch(setUser(response.data));
+        const role ='user';
+        const user =response.data;
+        const userData ={user,role}
+dispatch(setUser(useData));
 localStorage.setItem('userInfo',JSON.stringify(response.data));
     toast.success("Register Successfully!");       
     go('/') 
