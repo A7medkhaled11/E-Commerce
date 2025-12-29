@@ -16,7 +16,8 @@ export default function Users() {
         const [typesort,setTypeSort]=useState('');
           const[isloading , setIsloading] = useState(true);
           const[filter , setFilter]=useState('');;
-          const[filterValue , setFilterValue]=useState(''); ;
+          const[filterValue , setFilterValue]=useState(''); 
+          const [filterSearch , setFilterSearch] = useState('');
 
 
         
@@ -36,6 +37,7 @@ export default function Users() {
     function handleSort(e){
         setSortBy(e.target.value)
         setFilter('');
+        setFilterSearch('');
     }
     const filterOptions = {
   eyeColor: ["Brown", "Green", "Black", "Hazel"],
@@ -47,6 +49,7 @@ export default function Users() {
        const selectedFilter = e.target.value;
       setFilter(selectedFilter);
       setSortBy('');
+      setSearchTerm('');
       if(filterOptions[selectedFilter]){
         setFilterValue(filterOptions[selectedFilter][0]);
 
@@ -63,8 +66,9 @@ export default function Users() {
       setTotal(response.data.total)
     } else{
  const response = await api.get(`/users/filter?key=${filter}&value=${filterValue}&limit=${limit}&skip=${skip}`)
-      setUsers(response.data.users);
-      setTotal(response.data.total)
+      const FilterSearchTerm = await response.data.users.filter(item=>item.firstName.toLowerCase().includes(filterSearch.toLowerCase()))
+          setUsers(FilterSearchTerm);
+      setTotal(response.data.total);
     }
      
     } catch (error) {
@@ -74,7 +78,7 @@ export default function Users() {
     }
     
   }
-  useEffect(()=>{fetchAllUsers();},[skip ,searchTerm,sortBy,typesort,filter,filterValue]);
+  useEffect(()=>{fetchAllUsers();},[skip ,searchTerm,sortBy,typesort,filter,filterValue ,filterSearch]);
   if(isloading) return <Loading/>
   return (
     <div className='mt-4'>
@@ -83,7 +87,7 @@ export default function Users() {
           <Form data-bs-theme={isDark ? 'dark' : 'light'}> 
               <Form.Group >
                   <Form.Control  onChange={(e)=>{
-                    setSearchTerm(e.target.value);
+                    {filter!=''? setFilterSearch(e.target.value) : setSearchTerm(e.target.value);}
                   }} type='search' name='searcn' id='search' placeholder='Enter Search Term'></Form.Control>
               </Form.Group>
           </Form>
