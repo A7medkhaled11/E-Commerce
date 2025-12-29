@@ -1,16 +1,62 @@
-# React + Vite
+# 🛒 React Dashboard & Product Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based web application that provides a full dashboard for managing products and users, with authentication, pagination, and detailed views for each entity.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Project Overview
 
-## React Compiler
+This project is a **React Dashboard Application** designed to manage products and users efficiently.  
+It includes authentication pages, user profiles, product listings, product details, and an admin-style dashboard UI.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Key Features:
+- User authentication (Login & Register)
+- Products listing with pagination
+- Product details page
+- Users management (Users list & User details)
+- User profile page
+- Admin dashboard layout
+- Reusable components (Navbar, Footer, Cards, Pagination)
+- Loading indicator and logout functionality
+- Not Found (404) page handling
 
-## Expanding the ESLint configuration
+The project is structured using best practices with reusable components and organized folders.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ⚙️ Installation Steps
+
+To run the project locally, follow these steps:
+
+1. **Clone the repository**
+  ```bash
+    git clone https://github.com/your-username/your-repo-name.git
+2.  Navigate to the project directory
+     cd your-repo-name
+3. Install dependencies
+     npm install
+4. Run the development server
+  npm run dev
+5. Open the application in the browser
+      http://localhost:5173
+
+
+🛠 Tech Stack:
+Frontend: React.js
+State Management: Redux Toolkit
+Routing: React Router DOM
+Styling: CSS
+Build Tool: Vite
+Package Manager: npm
+UI Components: Reusable custom components
+
+🚀 Demo Link
+🔗 Live Demo:
+Not deployed yet – will be added once the project is deployed.
+
+👨‍💻 Author
+Name: Ahmed khaled elsayed
+Role: Frontend Developer
+
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
