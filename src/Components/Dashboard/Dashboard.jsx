@@ -7,9 +7,8 @@ export default function Dashboard() {
     const{isDark} = useSelector(state=>state.darkmode);
   return (
     <div className='vh-100 position-fixed general-dash '>
-        <h5 className='mt-5 ms-2 fw-bold text-light'>
-DashBoard        </h5>
-<Nav className='ms-4 dash-links d-flex flex-column'>
+    <h5 className='mt-5 ms-1 ms-md-3 fw-bold text-light titledash '>DashBoard</h5>
+<Nav className='ms-2 ms-sm-4 dash-links d-flex flex-column'>
     <NavLink to='/Dashusers' className='text-decoration-none text-light fw-bold '>
     Users
     </NavLink>

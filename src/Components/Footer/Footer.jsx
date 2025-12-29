@@ -15,7 +15,7 @@ export default function Footer() {
   const {role}= useSelector(state=>state.user)
     const {isDark} = useSelector(state=>state.darkmode);
   return (
-<div className={`general-footer mt-5 d-flex align-items-center  ${role=='admin'&&'ms-2'} ${isDark ?'bg-dark':'bg-light'}`} >
+<div className={`general-footer mt-5 d-flex align-items-center  ${role=='admin'&&'ms-1 ms-sm-2'} ${isDark ?'bg-dark':'bg-light'}`} >
   <Container className='general-container d-flex  justify-content-between align-items-center'>
     <div className='social'>
         <h4 className='text-secondary'>Connect With Us</h4>

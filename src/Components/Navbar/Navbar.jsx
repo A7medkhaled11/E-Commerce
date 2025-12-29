@@ -21,7 +21,7 @@ const {role} = useSelector(state=>state.user);
              
 
   return (
-    <BNavbar expand='lg' className={role=='admin'&&'ms-2'} bg={theme} data-bs-theme={theme}>
+    <BNavbar expand='lg' className={role=='admin'&&'ms-1 ms-sm-2'} bg={theme} data-bs-theme={theme}>
       <Container>
           <BNavbar.Brand as={Link} to='/'>
       <div className='d-flex align-items-center justify-content-center fs-4 gap-2'>

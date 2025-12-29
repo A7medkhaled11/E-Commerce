@@ -8,8 +8,14 @@ a.active{
     color: black !important;
 }
 }
-@media(max-width:450px){
+@media(max-width:500px){
 .general-dash{
-    width: 120px;
+    width: 100px;
+}
+.titledash{
+    font-size: 16px ;
+}
+.dash-links {
+font-size: 14px;
 }
 }
