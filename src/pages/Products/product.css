@@ -1,4 +1,4 @@
-@media(max-width:450px){
+@media(max-width:670px){
     .product-search{
         flex-direction: column ;
         gap: 2px;

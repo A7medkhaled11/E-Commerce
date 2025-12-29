@@ -1,7 +1,7 @@
 .main-div{
     margin-left: 150px;
 }
-@media(max-width:500px){
+@media(max-width:600px){
 .main-div{
     margin-left: 101px;
 }

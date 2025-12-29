@@ -8,7 +8,7 @@ a.active{
     color: black !important;
 }
 }
-@media(max-width:500px){
+@media(max-width:600px){
 .general-dash{
     width: 100px;
 }
