@@ -51,7 +51,7 @@ else{
         const role ='user';
         const user =response.data;
         const userData ={user,role}
-dispatch(setUser(useData));
+dispatch(setUser(userData));
 localStorage.setItem('userInfo',JSON.stringify(response.data));
     toast.success("Register Successfully!");       
     go('/') 
