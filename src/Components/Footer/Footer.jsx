@@ -39,10 +39,10 @@ export default function Footer() {
 
     <div>
 <Nav className='gap-2 links  '>
-    <Link className='text-decoration-none text-secondary fw-bold'>AboutUs</Link>
-     <Link className='text-decoration-none text-secondary  fw-bold'>PrivacyPolicy</Link>
-     <Link className='text-decoration-none text-secondary fw-bold'>Terms</Link>
-     <Link className='text-decoration-none text-secondary fw-bold'>Service</Link>
+    <Link to='/aboutus' className='text-decoration-none text-secondary fw-bold' >AboutUs</Link>
+     <Link to='/privacypolicy' className='text-decoration-none text-secondary  fw-bold'>PrivacyPolicy</Link>
+     <Link to='/terms' className='text-decoration-none text-secondary fw-bold'>Terms</Link>
+     <Link to='/service' className='text-decoration-none text-secondary fw-bold'>Service</Link>
 
 </Nav>
     </div>

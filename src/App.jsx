@@ -25,6 +25,10 @@ import DashProducts from './pages/DashboardProducts/DashProducts'
 import DashboardCarts from './pages/DashboardCarts/DashboardCarts'
 import Users from './pages/Users/Users'
 import UserDetails from './pages/UserDetails/UserDetails'
+import AboutUs from './pages/Aboutus/AboutUs'
+import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy'
+import Terms from './pages/Terms/Terms'
+import Service from './pages/Service/Service'
 function App() {
   const [Isloading , seLoading] = useState(true);
 const {isLoggIn}=useSelector(state=>state.user);
@@ -76,6 +80,13 @@ if(Isloading){return <Loading/>}
         <Route path='/products'Component={Products}/>
         <Route path='/product-detail/:id'Component={ProductDetails}/>
         <Route path='/cart'Component={Cart}/>
+       <Route path='/aboutus'Component={AboutUs}/>
+        <Route path='/privacypolicy'Component={PrivacyPolicy}/>
+        <Route path='/terms'Component={Terms}/>
+                <Route path='/service'Component={Service}/>
+
+
+
         <Route path='*'Component={NotFound}/>
         {role=='admin'&& <Route path='/Dashusers'Component={DashUsers}/>}
         {role=='admin'&& <Route path='/Dashproducts'Component={DashProducts}/>}
