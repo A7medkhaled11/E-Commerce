@@ -52,7 +52,7 @@ UI Components: Reusable custom components
 
 🚀 Demo Link
 🔗 Live Demo:
-Not deployed yet – will be added once the project is deployed.
+    https://e-commerce-taupe-delta-57.vercel.app
 
 👨‍💻 Author
 Name: Ahmed khaled elsayed
