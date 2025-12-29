@@ -70,7 +70,7 @@ export default function Products() {
 </Form>
 {sortBy!==''&&<Form data-bs-theme={isDark ? 'dark' : 'light'}> 
     <Form.Group>
-        <Form.Select  onChange={handleTypeSort}  name='select' id='select'>
+        <Form.Select value={typesort} onChange={handleTypeSort}  name='select' id='select'>
                          <option value='asc'>Asc</option>
              <option value='desc'>Desc</option>
            
