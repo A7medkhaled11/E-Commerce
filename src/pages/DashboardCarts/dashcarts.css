@@ -1,0 +1,38 @@
+@media(max-width:390px){
+.product-image{
+    width: 120px;
+    height: 120px;
+}
+}
+@media(max-width:355px){
+.product-image{
+    width: 100px;
+    height: 100px;
+}
+.font-size{
+    font-size: 15px;
+}
+.product-title{
+    font-size: 18px;
+}
+}
+
+@media(max-width:363px){
+.acc-header{
+    font-size: 17px;
+}
+}
+@media(max-width:343px){
+.acc-header{
+    font-size: 16px;
+}
+}
+@media(max-width:335px){
+.acc-header{
+    font-size: 14px;
+}
+.product-image{
+    width: 80px;
+    height: 80px;
+}
+}
