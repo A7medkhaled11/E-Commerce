@@ -1,0 +1,7 @@
+
+@media(max-width:580px){
+.header{
+    flex-direction: column !important;
+   gap: 3px;
+}
+}

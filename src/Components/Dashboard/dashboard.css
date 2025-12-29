@@ -1,0 +1,10 @@
+.general-dash{
+    width: 150px;
+    background-color: rgb(3, 31, 54);
+
+}
+.dash-links {
+a.active{
+    color: black !important;
+}
+}
