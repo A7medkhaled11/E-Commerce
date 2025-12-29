@@ -26,13 +26,13 @@ export default function ProductCard({product}) {
                 <Card.Title><span className='text-warning d-flex justify-content-center align-items-center'>{product.rating}<MdStarRate /></span></Card.Title>
             </div>
            <div className='mt-auto d-flex justify-content-center gap-2 align-items-center'>
-              <Button as={Link} to={`/product-detail/${product.id}`} variant="outline-info">Show More</Button>
-                   {product.stock>0? <Button onClick={()=>{
+              <Button className="btn-sm" as={Link} to={`/product-detail/${product.id}`} variant="outline-info">Show More</Button>
+                   {product.stock>0? <Button className="btn-sm" onClick={()=>{
                     isLoggIn?dispatch(addToCart(product)):toast.error('You Must Login First')
                     
                   
                   }} variant="success">Add to Cart</Button>:
-                    <Button disabled  variant="secondary">Out Of Stock </Button>}
+                    <Button className="btn-sm" disabled  variant="secondary">Out Of Stock </Button>}
                      </div>
             </Card.Body>
            
